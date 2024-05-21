@@ -24,7 +24,7 @@ function Projects() {
               imgPath={SChat}
               title="SChat"
               description="Personal Chat Room to share resources and hangout with friends build with NextJS, Express NodeJS, and TailwindCSS. Have features which allow users for realtime messaging, image, emoji sharing, as well as Video Call, Voice Call. Its most distinctive feature is the end-to-end encryption (E2EE) process for sending and receiving messages."
-              demoLink="https://schat-e2ee.doanvanson.com/"
+              demoLink="https://schat-e2ee.doanvanson.id.vn/"
             />
           </Col>
 
@@ -33,7 +33,7 @@ function Projects() {
               imgPath={ITCenter}
               title="IT Center"
               description="The IT center is a software written in React.js, PHP Laravel, and Bootstrap. It has key features such as searching for courses, creating posts, creating questions, searching for posts, questions,..."
-              demoLink="https://itcenter.doanvanson.com/"
+              demoLink="https://itcenter.doanvanson.id.vn/"
             />
           </Col>
 
@@ -42,7 +42,7 @@ function Projects() {
               imgPath={boxStudio}
               title="Box Studio"
               description="Box Studio is a landing page providing services in marketing, media, & multi-platform digital content. It is written in React.js and Bootstrap."
-              demoLink="https://box-studio.doanvanson.com/"
+              demoLink="https://box-studio.doanvanson.id.vn/"
             />
           </Col>
 
@@ -51,7 +51,7 @@ function Projects() {
               imgPath={bookingCare}
               title="Booking Care"
               description="Booking Care is a system that helps patients schedule medical appointments. Additionally, it includes an admin page to assist in managing doctors, hospital rooms, and doctor schedules. It is written in ReactJS and Express NodeJS."
-              demoLink="https://bookingcare.doanvanson.com/"
+              demoLink="https://bookingcare.doanvanson.id.vn/"
             />
           </Col>
         </Row>
