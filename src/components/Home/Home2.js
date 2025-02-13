@@ -48,7 +48,7 @@ function Home2() {
                 <b className="purple">
                   Express for Node.js and Laravel for PHP
                 </b>
-              </i>
+              </i>{" "}
               to provide structured backend solution.
               <br />
               <br />

@@ -30,15 +30,6 @@ function Projects() {
 
           <Col md={6} lg={4} className="project-card">
             <ProjectCard
-              imgPath={ITCenter}
-              title="IT Center"
-              description="The IT center is a software written in React.js, PHP Laravel, and Bootstrap. It has key features such as searching for courses, creating posts, creating questions, searching for posts, questions,..."
-              demoLink="https://itcenter.doanvanson.id.vn/"
-            />
-          </Col>
-
-          <Col md={6} lg={4} className="project-card">
-            <ProjectCard
               imgPath={boxStudio}
               title="Box Studio"
               description="Box Studio is a landing page providing services in marketing, media, & multi-platform digital content. It is written in React.js and Bootstrap."
@@ -52,6 +43,15 @@ function Projects() {
               title="Booking Care"
               description="Booking Care is a system that helps patients schedule medical appointments. Additionally, it includes an admin page to assist in managing doctors, hospital rooms, and doctor schedules. It is written in ReactJS and Express NodeJS."
               demoLink="https://bookingcare.doanvanson.id.vn/"
+            />
+          </Col>
+
+          <Col md={6} lg={4} className="project-card">
+            <ProjectCard
+              imgPath={ITCenter}
+              title="IT Center"
+              description="The IT center is a software written in React.js, PHP Laravel, and Bootstrap. It has key features such as searching for courses, creating posts, creating questions, searching for posts, questions,..."
+              demoLink="https://itcenter.doanvanson.id.vn/"
             />
           </Col>
         </Row>
