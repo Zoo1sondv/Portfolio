@@ -46,9 +46,10 @@ function Home2() {
               for flexible UI development, while also leveraging frameworks like
               <i>
                 <b className="purple">
-                  Express for Node.js and Laravel for PHP
+                  {" "}
+                  Express for Node.js and Laravel for PHP{" "}
                 </b>
-              </i>{" "}
+              </i>
               to provide structured backend solution.
               <br />
               <br />
