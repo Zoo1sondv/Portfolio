@@ -1,11 +1,11 @@
-import { useState, useEffect, useRef, useCallback } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
+import { Col, Container, Row } from "react-bootstrap";
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 import { loadGLTFModel } from "../../lib/model";
-import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
-import Type from "./Type";
 import Home2 from "./Home2";
+import Type from "./Type";
 
 function easeOutCirc(x) {
   return Math.sqrt(1 - Math.pow(x - 1, 4));
@@ -16,9 +16,6 @@ const Home = () => {
   const [loading, setLoading] = useState(true);
   const refRenderer = useRef();
   const urlDogGLB = "/dog.glb";
-  // (process.env.NODE_ENV === "production"
-  //   ? "https://craftzdog.global.ssl.fastly.net/homepage"
-  //   : "") + "/dog.glb";
 
   const handleWindowResize = useCallback(() => {
     const { current: renderer } = refRenderer;
@@ -110,9 +107,9 @@ const Home = () => {
       };
 
       return () => {
-        // cancelAnimationFrame(req);
-        // renderer.domElement.remove();
-        // renderer.dispose();
+        cancelAnimationFrame(req);
+        renderer.domElement.remove();
+        renderer.dispose();
       };
     }
   }, []);
