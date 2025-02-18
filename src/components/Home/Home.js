@@ -28,7 +28,6 @@ const Home = () => {
     }
   }, []);
 
-  /* eslint-disable react-hooks/exhaustive-deps */
   useEffect(() => {
     const { current: container } = refContainer;
     if (container) {
@@ -53,8 +52,6 @@ const Home = () => {
         20 * Math.cos(0.2 * Math.PI)
       );
 
-      // 640 -> 240
-      // 8   -> 6
       const scale = scH * 0.005 + 4.8;
       const camera = new THREE.OrthographicCamera(
         -scale,
@@ -86,9 +83,7 @@ const Home = () => {
       let frame = 0;
       const animate = () => {
         req = requestAnimationFrame(animate);
-
         frame = frame <= 100 ? frame + 1 : frame;
-
         if (frame <= 100) {
           const p = initialCameraPosition;
           const rotSpeed = -easeOutCirc(frame / 120) * Math.PI * 20;
@@ -146,15 +141,10 @@ const Home = () => {
             </Col>
 
             <Col md={5} style={{ paddingBottom: 20 }}>
-              <div ref={refContainer} style={{ height: "450px" }}>
-                {loading && <div>hi</div>}
+              <div ref={refContainer} style={{ width:"450px", height: "450px" }}>
+                {loading && <div>Loading...</div>}
               </div>
-              {/* <img
-              src={homeLogo}
-              alt="home pic"
-              className="img-fluid"
-              style={{ maxHeight: "450px" }}
-            /> */}
+
             </Col>
           </Row>
         </Container>
